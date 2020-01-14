@@ -120,6 +120,7 @@ function loveTextGen() {
 
 sliderEl.oninput = function () {
     slideValueTextEL.innerHTML = this.value;
+    localStorage.setItem('sliderValue', this.value)
 }
 
 function pageVisits() {
@@ -142,12 +143,12 @@ function pageVisits() {
 function liefdeTekstStorage(arrayGen) {
     localStorage.setItem('love', JSON.stringify(arrayGen))
     loveTextEl.value = arrayGen.join("\n");
-
 }
 
 
 function liefdeTekstStorageSet() {
     var localValueLiefde = localStorage.getItem('love');
+    var localSliderValue = localStorage.getItem('sliderValue')
 
     if (localValueLiefde == null) {
         loveAr = "Genereer een lief bericht!";
@@ -156,6 +157,13 @@ function liefdeTekstStorageSet() {
     } else {
         var arLove = JSON.parse(localValueLiefde);
         loveTextEl.value = arLove.join("\n");
+    }
+
+    if(localSliderValue == null){
+        slideValueTextEL.innerHTML = 10;
+        loveTextEl.rows = 10;
+    } else {
+        loveTextEl.rows = localSliderValue;
     }
 
 }

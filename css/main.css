@@ -110,20 +110,21 @@ label{
     -webkit-transition: .2s;
     transition: opacity .2s;
   }
-  
+
+
   .slider:hover {
     opacity: 1;
   }
   
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    background: rgb(255, 0, 0);
-    border: 1.5px solid black;
-    cursor: pointer;
-  }
+    border: none;
+    height: 32px;
+    width: 32px;
+    background: goldenrod;
+    background: url('../images/heart2.png') no-repeat;
+    border-radius: 0 !important;
+}
   
   .slider::-moz-range-thumb {
     width: 25px;
