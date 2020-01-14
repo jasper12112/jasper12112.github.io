@@ -19,6 +19,9 @@ formElement.addEventListener('submit', function (e) {
 });
 
 function love(){
+    var elem = document.getElementById("myBar");
+    elem.style.width = 0 + "%";
+    loveLabel.innerHTML = "Your changes: ";
     var name1 = loveName1.value;
     var name2 = loveName2.value;
     name1 = name1.toLowerCase();
@@ -55,10 +58,32 @@ function love(){
 
         totalNum=getNum(cnameone)*getNum(cnametwo);
         finalScore=totalNum%100;
-        if(finalScore >= 96){
+        if(finalScore >= 100){
             finalScore = "∞";
         }
     }
-    loveLabel.innerHTML = "Your changes: " + finalScore;
-    console.log(finalScore)
+    var i = 0;
+    var mathScore = 0;
+    if(finalScore == "∞"){
+        mathScore = 100;
+    }else{
+        mathScore = finalScore;
+    }
+    if (i == 0) {
+        i = 1;
+        var width = 1;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= mathScore) {
+                clearInterval(id);
+                i = 0;
+                animation = true;
+                loveLabel.innerHTML = "Your changes: " + finalScore;
+                console.log(finalScore)
+            } else {
+                width++;
+                elem.style.width = width + "%";
+            }
+        }
+    }
 }
