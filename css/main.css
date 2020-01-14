@@ -39,6 +39,14 @@ label{
   border: 1px solid white;
   border-radius: 20px !important;
 }
+#lovelabel2{
+  position: absolute;
+  margin: 0;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
 #myBar {
   width: 1%;
   height: 20px;
