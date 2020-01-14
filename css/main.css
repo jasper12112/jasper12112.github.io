@@ -167,14 +167,14 @@ div.padding{
 
 @media screen and (max-width: 684px){
   div.paddingr{
-      padding: 0px;
+      padding: 1px;
   }
   .card{
     width: 13rem !important;
     height: 18rem !important;
   }
   div.paddingl{
-    padding: 0px;
+    padding: 1px;
   }
   .justify-content-center {
     justify-content: inherit !important;
