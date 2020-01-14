@@ -179,9 +179,11 @@ div.padding{
       padding: 0px;
   }
   .card{
-    width: 13rem !important;
     height: 18rem !important;
     border-radius: 0px !important;
+  }
+  .stylecard{
+    width: 13rem !important;
   }
   div.paddingl{
     padding: 0px;
