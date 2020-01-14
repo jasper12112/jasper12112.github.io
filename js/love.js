@@ -41,8 +41,7 @@ function love(){
             return outputNum
         }
         
-        function trimAll(A)
-        {
+        function trimAll(A){
         while(A.substring(0,1)==" ")
             {A=A.substring(1,A.length)}
 
