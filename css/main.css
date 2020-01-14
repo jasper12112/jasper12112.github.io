@@ -11,8 +11,22 @@ label{
   font-style:normal;
   font-size: 150%;
 }
+.cc{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
 .card{
   background: rgba(255, 255, 255, 0.05) !important;
+  border: transparent !important;
+  border-radius: 20px !important;
+}
+
+.stylecard{
+  background:white !important;
   border: transparent !important;
   border-radius: 20px !important;
 }
@@ -153,18 +167,15 @@ div.padding{
 
 @media screen and (max-width: 684px){
   div.paddingr{
-      padding: 1px;
-
+      padding: 0px;
+  }
+  .card{
+    width: 13rem !important;
+    height: 18rem !important;
   }
   div.paddingl{
-      padding: 1px;
-
+    padding: 0px;
   }
-  div.padding{
-    padding: 1px;
-    padding-top: 100px;
-  }
-
   .justify-content-center {
     justify-content: inherit !important;
   }
