@@ -31,7 +31,10 @@ function love(){
         finalScore = "∞";
     }
     else if((name1 == "jasper" && name2 != "shakira")||(name1 == "shakira" && name2 != "jasper")||(name1 != "shakira" && name2 == "jasper")||(name1 != "jasper" && name2 == "shakira")){
-        finalScore = Math.floor(Math.random() * 19);
+        finalScore = 0;
+    }
+    else if((name1 == "jasper" && name2 == "shakira")||(name1 == "shakira" && name2 == "jasper")){
+        finalScore = 92;
     }
     else{
         function getNum(A){
