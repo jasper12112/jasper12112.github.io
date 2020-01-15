@@ -37,7 +37,7 @@ function loveTextGen() {
         "Niemand is zo lief als jij bent!",
         "Ik hoop dat wij samen oud gaan worden.",
         "Ik denk de heletijd aan jou!",
-        "Ik mis je heel erg.",
+        "Ik mis je heel erg.",  
         "Mijn allerliefste dat ben jij, hopelijk blijf je voor altijd bij mij.",
         "De wereld is veel mooier met jou!",
         "Zonder jou in mijn leven heb ik geen strefen.",

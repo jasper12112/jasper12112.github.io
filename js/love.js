@@ -31,7 +31,7 @@ function love(){
         finalScore = "∞";
     }
     else if((name1 == "jasper" && name2 != "shakira")||(name1 == "shakira" && name2 != "jasper")||(name1 != "shakira" && name2 == "jasper")||(name1 != "jasper" && name2 == "shakira")){
-        finalScore = "0";
+        finalScore = Math.floor(Math.random() * 19);
     }
     else{
         function getNum(A){
@@ -57,7 +57,7 @@ function love(){
 
         totalNum=getNum(cnameone)*getNum(cnametwo);
         finalScore=totalNum%100;
-        if(finalScore >= 100){
+        if(finalScore >= 96){
             finalScore = "∞";
         }
     }
