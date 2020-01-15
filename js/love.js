@@ -33,7 +33,7 @@ function love(){
     else if((name1 == "jasper" && name2 != "shakira")||(name1 == "shakira" && name2 != "jasper")||(name1 != "shakira" && name2 == "jasper")||(name1 != "jasper" && name2 == "shakira")){
         finalScore = 0;
     }
-    else if((name1 == "jasper" && name2 == "shakira")||(name1 == "shakira" && name2 == "jasper")){
+    else if((name1 == "miranda" && name2 == "wytze")||(name1 == "wytze" && name2 == "miranda")){
         finalScore = 92;
     }
     else{
