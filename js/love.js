@@ -27,7 +27,6 @@ function love(){
     name1 = name1.toLowerCase();
     name2 = name2.toLowerCase();
 
-    else{
         function getNum(A){
             outputNum=0;
             for(i=0;i<A.length;i++)
@@ -54,7 +53,7 @@ function love(){
         if(finalScore >= 96){
             finalScore = "∞";
         }
-    }
+   
     var i = 0;
     var mathScore = 0;
     if(finalScore == "∞"){
